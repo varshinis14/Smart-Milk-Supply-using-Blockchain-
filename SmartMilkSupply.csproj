@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3DEE2B6-6D8F-4ADC-B41B-A6176B3AC08A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartMilkSupply</RootNamespace>
+    <AssemblyName>SmartMilkSupply</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.8.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sha2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Sha2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddArea.aspx" />
+    <Content Include="AddFarmer.aspx" />
+    <Content Include="AddMBWallet.aspx" />
+    <Content Include="AddMilkBooth.aspx" />
+    <Content Include="AddProduct.aspx" />
+    <Content Include="AddVillage.aspx" />
+    <Content Include="AddVillageDairy.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="ApproveMBMPOrder.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap_css.css" />
+    <Content Include="css\css_style.css" />
+    <Content Include="css\css_style_css.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\export.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fontawesome-all.css" />
+    <Content Include="css\graph.css" />
+    <Content Include="css\jqcandlestick.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\menu_topexpand.css" />
+    <Content Include="css\mislider-custom.css" />
+    <Content Include="css\mislider.css" />
+    <Content Include="css\monthly.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\SidebarNav.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style_css.css" />
+    <Content Include="DLL\MySql.Data.dll" />
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+    <Content Include="DLL\Sha2.dll" />
+    <Content Include="DLL\StemmersNet.dll" />
+    <Content Include="FarmerHome.aspx" />
+    <Content Include="FarmerViewMilkTransaction.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2.png" />
+    <Content Include="images\22.jpg" />
+    <Content Include="images\2222.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\549-5493202_hardware-store-icon-png-transparent-png.png" />
+    <Content Include="images\a.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\b12.jpg" />
+    <Content Include="images\b2.jpg" />
+    <Content Include="images\b322.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner12.jpg" />
+    <Content Include="images\banner233.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg1.jpg" />
+    <Content Include="images\bg7.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\Correct.jpg" />
+    <Content Include="images\f1.jpg" />
+    <Content Include="images\f2.jpg" />
+    <Content Include="images\f3.jpg" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\i1.png" />
+    <Content Include="images\i2.png" />
+    <Content Include="images\i3.png" />
+    <Content Include="images\i4.png" />
+    <Content Include="images\img-sprite.png" />
+    <Content Include="images\img1.png" />
+    <Content Include="images\lock.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\n1.jpg" />
+    <Content Include="images\n2.jpg" />
+    <Content Include="images\n3.jpg" />
+    <Content Include="images\next.png" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\search-icon.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\slider1.jpg" />
+    <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\slider4.jpg" />
+    <Content Include="images\slider5.jpg" />
+    <Content Include="images\slider6.jpg" />
+    <Content Include="images\slider7.jpg" />
+    <Content Include="images\t1.jpg" />
+    <Content Include="images\t2.jpg" />
+    <Content Include="images\t3.jpg" />
+    <Content Include="images\Tamper.jpg" />
+    <Content Include="images\tick.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\weather.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\amcharts.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\Chart.bundle.js" />
+    <Content Include="js\Chart.js" />
+    <Content Include="js\Chart.min.js" />
+    <Content Include="js\chartinator.js" />
+    <Content Include="js\classie.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\edulearn.js" />
+    <Content Include="js\export.min.js" />
+    <Content Include="js\images\dragIconRoundBig.svg" />
+    <Content Include="js\images\lens.svg" />
+    <Content Include="js\index.js" />
+    <Content Include="js\index1.js" />
+    <Content Include="js\index2.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery-2.2.3.min.js" />
+    <Content Include="js\jquery.flot.js" />
+    <Content Include="js\jquery.gauge.js" />
+    <Content Include="js\jquery.jqcandlestick.min.js" />
+    <Content Include="js\jquery.nicescroll.js" />
+    <Content Include="js\light.js" />
+    <Content Include="js\lightbox-plus-jquery.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\mislider.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\monthly.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="js\pie-chart.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\responsiveslides.min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\serial.js" />
+    <Content Include="js\SidebarNav.min.js" />
+    <Content Include="js\SimpleChart.js" />
+    <Content Include="js\SmoothScroll.min.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="js\validator.min.js" />
+    <Content Include="js_js\bootstrap.js" />
+    <Content Include="js_js\bootstrap.min.js" />
+    <Content Include="js_js\easing.js" />
+    <Content Include="js_js\edulearn.js" />
+    <Content Include="js_js\jquery-1.11.1.min.js" />
+    <Content Include="js_js\jquery-2.2.3.min.js" />
+    <Content Include="js_js\minicart.min.js" />
+    <Content Include="js_js\mislider.js" />
+    <Content Include="js_js\move-top.js" />
+    <Content Include="js_js\responsiveslides.min.js" />
+    <Content Include="js_js\skdslider.min.js" />
+    <Content Include="js_js\SmoothScroll.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MBHome.aspx" />
+    <Content Include="MBOrderMilkProduct.aspx" />
+    <Content Include="MBViewMPST.aspx" />
+    <Content Include="MBViewMT.aspx" />
+    <Content Include="MBViewWallet.aspx" />
+    <Content Include="MDViewVDMT.aspx" />
+    <Content Include="MilkProductProduction.aspx" />
+    <Content Include="MilkProductSales.aspx" />
+    <Content Include="VDCMFarmer.aspx" />
+    <Content Include="VDSupplyMMD.aspx" />
+    <Content Include="VDViewFMT.aspx" />
+    <Content Include="ViewMilkProductProduction.aspx" />
+    <Content Include="ViewProduct.aspx" />
+    <Content Include="VillageDairyHome.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddArea.aspx.cs">
+      <DependentUpon>AddArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddArea.aspx.designer.cs">
+      <DependentUpon>AddArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFarmer.aspx.cs">
+      <DependentUpon>AddFarmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFarmer.aspx.designer.cs">
+      <DependentUpon>AddFarmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMBWallet.aspx.cs">
+      <DependentUpon>AddMBWallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMBWallet.aspx.designer.cs">
+      <DependentUpon>AddMBWallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMilkBooth.aspx.cs">
+      <DependentUpon>AddMilkBooth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMilkBooth.aspx.designer.cs">
+      <DependentUpon>AddMilkBooth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVillage.aspx.cs">
+      <DependentUpon>AddVillage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVillage.aspx.designer.cs">
+      <DependentUpon>AddVillage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVillageDairy.aspx.cs">
+      <DependentUpon>AddVillageDairy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVillageDairy.aspx.designer.cs">
+      <DependentUpon>AddVillageDairy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveMBMPOrder.aspx.cs">
+      <DependentUpon>ApproveMBMPOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveMBMPOrder.aspx.designer.cs">
+      <DependentUpon>ApproveMBMPOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farmer.Master.cs">
+      <DependentUpon>Farmer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farmer.Master.designer.cs">
+      <DependentUpon>Farmer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerHome.aspx.cs">
+      <DependentUpon>FarmerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FarmerHome.aspx.designer.cs">
+      <DependentUpon>FarmerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerViewMilkTransaction.aspx.cs">
+      <DependentUpon>FarmerViewMilkTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FarmerViewMilkTransaction.aspx.designer.cs">
+      <DependentUpon>FarmerViewMilkTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBHome.aspx.cs">
+      <DependentUpon>MBHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBHome.aspx.designer.cs">
+      <DependentUpon>MBHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBOrderMilkProduct.aspx.cs">
+      <DependentUpon>MBOrderMilkProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBOrderMilkProduct.aspx.designer.cs">
+      <DependentUpon>MBOrderMilkProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBViewMPST.aspx.cs">
+      <DependentUpon>MBViewMPST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBViewMPST.aspx.designer.cs">
+      <DependentUpon>MBViewMPST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBViewMT.aspx.cs">
+      <DependentUpon>MBViewMT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBViewMT.aspx.designer.cs">
+      <DependentUpon>MBViewMT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBViewWallet.aspx.cs">
+      <DependentUpon>MBViewWallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBViewWallet.aspx.designer.cs">
+      <DependentUpon>MBViewWallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MDViewVDMT.aspx.cs">
+      <DependentUpon>MDViewVDMT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MDViewVDMT.aspx.designer.cs">
+      <DependentUpon>MDViewVDMT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilkBooth.Master.cs">
+      <DependentUpon>MilkBooth.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilkBooth.Master.designer.cs">
+      <DependentUpon>MilkBooth.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MilkProductProduction.aspx.cs">
+      <DependentUpon>MilkProductProduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilkProductProduction.aspx.designer.cs">
+      <DependentUpon>MilkProductProduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilkProductSales.aspx.cs">
+      <DependentUpon>MilkProductSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilkProductSales.aspx.designer.cs">
+      <DependentUpon>MilkProductSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyConnection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sha256.cs" />
+    <Compile Include="SHAHashValue.cs" />
+    <Compile Include="VDCMFarmer.aspx.cs">
+      <DependentUpon>VDCMFarmer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VDCMFarmer.aspx.designer.cs">
+      <DependentUpon>VDCMFarmer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VDSupplyMMD.aspx.cs">
+      <DependentUpon>VDSupplyMMD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VDSupplyMMD.aspx.designer.cs">
+      <DependentUpon>VDSupplyMMD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VDViewFMT.aspx.cs">
+      <DependentUpon>VDViewFMT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VDViewFMT.aspx.designer.cs">
+      <DependentUpon>VDViewFMT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMilkProductProduction.aspx.cs">
+      <DependentUpon>ViewMilkProductProduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewMilkProductProduction.aspx.designer.cs">
+      <DependentUpon>ViewMilkProductProduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.designer.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VillageDairy.Master.cs">
+      <DependentUpon>VillageDairy.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VillageDairy.Master.designer.cs">
+      <DependentUpon>VillageDairy.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VillageDairyHome.aspx.cs">
+      <DependentUpon>VillageDairyHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VillageDairyHome.aspx.designer.cs">
+      <DependentUpon>VillageDairyHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <Content Include="Farmer.Master" />
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="images\illustration-hardware-store-on-white-260nw-123481843.webp" />
+    <Content Include="VillageDairy.Master" />
+    <Content Include="MilkBooth.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53198</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
